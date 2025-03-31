@@ -1,4 +1,4 @@
-import React, { lazy , Suspense, useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -21,28 +21,28 @@ import Cart from "./components/Cart";
 
 
 
-const Grocery = lazy(()=> import ("./components/Grocery"))
+const Grocery = lazy(() => import("./components/Grocery"))
 
-    
+
 const AppLayout = () => {
 
-  const [userName,setuserName] = useState()
-  useEffect(()=>{
+  const [userName, setuserName] = useState()
+  useEffect(() => {
     const data = {
       name: "Lakshya Shahi"
     }
     setuserName(data.name)
-  },[])  
-  
-  return(
+  }, [])
+
+  return (
     <Provider store={appStore} >
-    <UserContext.Provider value={{loggedInUser:userName , setuserName}}>
+      <UserContext.Provider value={{ loggedInUser: userName, setuserName }}>
         <div className="app">
-            <Header/>
-            <Outlet />
+          <Header />
+          <Outlet />
         </div></UserContext.Provider>
-        </Provider>
-    )
+    </Provider>
+  )
 }
 const appRouter = createBrowserRouter([
   {
@@ -51,7 +51,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/about",
-        element: <About/>
+        element: <About />
       },
       {
         path: "/contact",
@@ -75,9 +75,9 @@ const appRouter = createBrowserRouter([
       }
     ],
     errorElement: <Error />
-    
+
   }
-  
+
 ])
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
