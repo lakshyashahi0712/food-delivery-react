@@ -7,16 +7,12 @@ import Error from "./components/Error";
 import Contact from "./components/Contact";
 import ResturantMenu from "./components/ResturantMenu";
 // import Grocery from "./components/Grocery";
-import { Outlet } from "react-router";
-import {
-  createBrowserRouter as Router,
-  RouterProvider
-} from "react-router";
-import { createBrowserRouter } from "react-router";
+
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router"
 
 
 
