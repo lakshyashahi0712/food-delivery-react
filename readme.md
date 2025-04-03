@@ -1,0 +1,11 @@
+# Testing in our app
+ -Install react testing library
+ -install jest
+ -install babel dependencies
+ -configure babel
+ -configure parcel config file to disable deafult babel transpilation 
+ - jest - npx jest --init
+ - install jsdom library
+ -install @babel/preset-react - to make jsx work in testcases
+ -include @babe/preset-react inside my babel
+ -install npm i -D @testing-library/jest-dom
