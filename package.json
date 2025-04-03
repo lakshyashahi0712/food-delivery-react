@@ -1,5 +1,5 @@
 {
-  "homepage": "https://lakshyashahi0712.github.io/food-delivery-react/",
+  "homepage": "https://lakshyashahi0712.github.io/food-delivery-react",
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is Namaste React ",
@@ -8,7 +8,7 @@
     "build": "parcel build index.html",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "lakshya",
