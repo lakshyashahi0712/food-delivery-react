@@ -7,7 +7,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
@@ -25,18 +25,18 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "parcel": "^2.13.3",
-    "process": "^0.11.10",
-    "tailwindcss": "^3.4.17"
+    "process": "^0.11.10"
   },
   "dependencies": {
     "-": "^0.0.1",
     "@reduxjs/toolkit": "^2.6.1",
+    "@tailwindcss/postcss": "^4.1.1",
     "autoprefixer": "^10.4.21",
     "D": "^1.0.0",
-    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
-    "react-router": "^7.4.0"
+    "react-router": "^7.4.0",
+    "tailwindcss": "^4.1.1"
   }
 }
